@@ -1,0 +1,26 @@
+.dashboard {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f4f4f4;
+  }
+
+  &__body {
+    padding-top: 2rem;
+  }
+
+  &__number {
+    font-size: 5.2rem;
+    font-weight: 500;
+    line-height: 1;
+
+    color: $blue-color;
+  }
+}
+
+.dashboard__block + .dashboard__block {
+  margin-top: 2rem;
+}

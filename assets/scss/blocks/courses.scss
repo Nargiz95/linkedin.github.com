@@ -1,0 +1,40 @@
+.courses {
+  &__header {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+
+    border-bottom: 1px solid #f4f4f4;
+  }
+
+  &__body {
+    padding-top: 2rem;
+  }
+
+  &__img {
+    display: block;
+    height: 5.2rem;
+    width: 8rem;
+    object-fit: cover;
+
+    border-radius: 0.4rem;
+    margin-right: 1.5rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    color: $black-color;
+
+    margin-bottom: 1.5rem;
+
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: $blue-color;
+    }
+  }
+
+  &__viewers {
+    font-size: 1rem;
+  }
+}

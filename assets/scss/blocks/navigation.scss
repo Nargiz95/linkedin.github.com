@@ -1,0 +1,65 @@
+.nav {
+  padding: 0 1.6rem;
+
+  @include breakpoint($tablet-bp) {
+    padding: 0 0.8rem;
+  }
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  min-width: 9rem;
+  height: 8rem;
+
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $black-color;
+
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s linear, color 0.2s linear;
+
+  svg {
+    margin-bottom: 0.8rem;
+
+    path {
+      transition: stroke 0.2s linear;
+    }
+  }
+
+  &:hover {
+    color: $blue-color;
+    border-bottom: 2px solid $blue-color;
+
+    path {
+      stroke: $blue-color;
+    }
+  }
+}
+
+.nav__badge {
+  position: absolute;
+  top: 8px;
+  right: 27px;
+
+  width: 1.6rem;
+  height: 1.6rem;
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+
+  color: $white-color;
+  background: linear-gradient(215.49deg, #ffb75e 5.4%, #ed8f03 93.45%);
+  border-radius: 50%;
+}

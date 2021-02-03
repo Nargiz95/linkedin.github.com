@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+
+  display: flex;
+
+  padding-right: 4rem;
+  margin-bottom: 4rem;
+  background-color: $white-color;
+
+  background: chocolate;
+
+  @include breakpoint($tablet-bp) {
+    padding-right: 2rem;
+    background-color: lightcoral;
+  }
+
+  @include breakpoint($large-bp) {
+    background-color: lawngreen;
+  }
+}
+
+.header__item,
+.nav {
+  height: 8rem;
+  border-right: 1px solid #f4f4f4;
+
+  @include breakpoint($large-bp) {
+    border: none;
+  }
+}
+
+.logo {
+  width: 13rem;
+  text-align: center;
+  padding: 1.7rem 0;
+
+  @include breakpoint($tablet-bp) {
+    width: 8rem;
+  }
+}

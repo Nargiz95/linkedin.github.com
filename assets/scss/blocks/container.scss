@@ -1,0 +1,13 @@
+.container {
+  width: 118rem;
+  margin: 0 auto;
+  background-color: $main-bg-color;
+
+  @include breakpoint($tablet-bp) {
+    width: 100rem;
+  }
+
+  @include breakpoint($large-bp) {
+    width: 80rem;
+  }
+}

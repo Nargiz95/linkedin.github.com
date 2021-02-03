@@ -1,0 +1,30 @@
+.intro {
+  display: flex;
+}
+
+.intro__left {
+  width: 85rem;
+  margin-right: 4rem;
+
+  @include breakpoint($tablet-bp) {
+    width: 65rem;
+    margin-right: 2rem;
+  }
+
+  @include breakpoint($large-bp) {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.intro__right {
+  width: 29rem;
+
+  @include breakpoint($tablet-bp) {
+    width: 33rem;
+  }
+
+  @include breakpoint($large-bp) {
+    display: none;
+  }
+}

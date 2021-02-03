@@ -1,0 +1,79 @@
+.education {
+  margin-bottom: 4rem;
+}
+
+.experience__card,
+.education__card {
+  display: flex;
+
+  padding-bottom: 2.5rem;
+
+  @include breakpoint($tablet-bp) {
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+}
+
+.experience__card + .experience__card {
+  border-top: 1px solid #f4f4f4;
+  padding-top: 2.5rem;
+}
+
+.experience__card_picture,
+.education__card_picture {
+  width: 10%;
+
+  @include breakpoint($tablet-bp) {
+    margin-bottom: 1rem;
+  }
+}
+
+.experience__card_info,
+.education__card_info {
+  width: 90%;
+}
+
+.experience__subtitle,
+.education__subtitle {
+  margin-bottom: 1rem;
+}
+
+.experience__work-info,
+.education__work-info {
+  display: flex;
+
+  @include breakpoint($tablet-bp) {
+    justify-content: center;
+  }
+}
+
+.experience__text,
+.education__text {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+
+  &--shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--blue {
+    font-weight: 500;
+    color: $blue-color;
+  }
+}
+
+.experience__data-info,
+.education__data-info {
+  display: flex;
+
+  @include breakpoint($tablet-bp) {
+    justify-content: center;
+  }
+}

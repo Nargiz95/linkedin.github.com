@@ -1,0 +1,46 @@
+.search {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+
+  width: 36.7rem;
+
+  @include breakpoint($tablet-bp) {
+    width: 22rem;
+    padding: 0 1.5rem;
+  }
+
+  @include breakpoint($large-bp) {
+    display: none;
+  }
+}
+
+.search__input {
+  width: 100%;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+
+  padding: 0 2rem 0 0;
+  margin-left: 2rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+
+  transition: border-bottom 0.8s linear;
+
+  &::placeholder {
+    color: #cecece;
+    font-size: 1.6rem;
+    line-height: 1.06;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $blue-color;
+  }
+
+  @include breakpoint($tablet-bp) {
+    padding: 1rem;
+    margin-left: 1rem;
+  }
+}

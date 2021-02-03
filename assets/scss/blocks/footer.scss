@@ -1,0 +1,144 @@
+.footer {
+  display: flex;
+
+  border-top: 1px solid #e7e7e7;
+
+  padding: 3.5rem 13rem 5.3rem 13rem;
+
+  @include breakpoint($tablet-bp) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  @include breakpoint($large-bp) {
+    flex-wrap: wrap;
+  }
+}
+
+.footer__first-half {
+  display: flex;
+
+  @include breakpoint($large-bp) {
+    width: 100%;
+
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  font-weight: 500;
+  margin-right: 7rem;
+
+  p {
+    margin-top: 1.2rem;
+
+    span {
+      color: $blue-color;
+    }
+  }
+
+  @include breakpoint($large-bp) {
+    width: 10%;
+  }
+}
+
+.footer__navigation {
+  @include breakpoint($large-bp) {
+    width: 80%;
+  }
+}
+
+.footer__title {
+  margin-bottom: 3rem;
+}
+
+.footer__navigation_list {
+  display: flex;
+}
+
+.footer__navigation_block + .footer__navigation_block {
+  margin-left: 3rem;
+}
+
+.footer__navigation_block {
+  @include breakpoint($large-bp) {
+    width: 40%;
+  }
+}
+
+.footer__navigation_item {
+  margin-bottom: 0.5rem;
+
+  color: $black-color;
+
+  a {
+    font-size: 1.2rem;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__second-half {
+  display: flex;
+
+  @include breakpoint($large-bp) {
+    margin-top: 2rem;
+    margin-left: 16rem;
+
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.footer__fast-access {
+  margin-left: 6.3rem;
+
+  &_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 0;
+
+    span {
+      font-weight: 500;
+    }
+
+    svg {
+      width: 1.6rem;
+    }
+  }
+
+  @include breakpoint($large-bp) {
+    margin-left: 0;
+  }
+}
+
+.footer__fast-access_item + .footer__fast-access_item {
+  margin-top: 1rem;
+}
+
+.footer__language {
+  margin-left: 6rem;
+
+  select {
+    width: 27rem;
+    height: 3.2rem;
+
+    background: $white-color;
+    border: 1px solid #f0f0f0;
+    border-radius: 0.4rem;
+
+    padding: 0.34em 1em;
+
+    font-family: inherit;
+    outline: $blue-color;
+
+    &:focus {
+      border: 1px solid $blue-color;
+    }
+  }
+}

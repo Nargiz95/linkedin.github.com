@@ -1,0 +1,71 @@
+.skills__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 25rem);
+  grid-column-gap: 2rem;
+
+  margin-bottom: 2.5rem;
+
+  @include breakpoint($tablet-bp) {
+    grid-template-columns: 100%;
+  }
+}
+
+.skills__card {
+  border: 1px solid #f4f4f4;
+  border-radius: 0.4rem;
+  cursor: pointer;
+
+  padding: 1.4rem 2rem;
+
+  transition: border 0.5s ease-out;
+
+  &:hover {
+    border: 1px solid $blue-color;
+  }
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &_amount {
+    color: $blue-color;
+    font-weight: 700;
+  }
+
+  &_context {
+    display: flex;
+  }
+
+  &_img {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    &--number {
+      font-size: 1rem;
+      font-weight: 500;
+
+      background-color: $blue-color;
+      color: $white-color;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.skills__card_img + .skills__card_img {
+  margin-left: -0.9rem;
+}
+
+.skills__card + .skills__card {
+  @include breakpoint($tablet-bp) {
+    margin-top: 2rem;
+  }
+}
